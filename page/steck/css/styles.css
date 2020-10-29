@@ -1,0 +1,358 @@
+.nav-bar {
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  padding: 30px 18%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.logo {
+  font-size: 30px;
+  opacity: 1;
+}
+.logo span {
+  color: #4bcaff;
+}
+.menu {
+  font-size: 14px;
+  opacity: 1;
+  margin: auto 0;
+}
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  color: white;
+  padding: 5px 15px;
+  transition: background 0.2s linear;
+  border: 1px solid black;
+}
+.menu li a:hover {
+  color: #4bcaff;
+  border: 1px solid #4bcaff;
+}
+.header {
+  width: 100%;
+  height: 80%;
+  background: url(../img/head-bg.jpg) no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  font-size: 35px;
+  padding: 15%;
+}
+.header-text {
+  opacity: 0.5;
+}
+.header-text .header-text-home {
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 5%;
+}
+
+.header-text-home:last-child {
+  width: 80%;
+}
+
+.servis {
+  width: 100%;
+  background: #4bcaff;
+  color: #fff;
+  padding: 50px 18%;
+}
+.servis h4 {
+  padding: 20px 0 15px;
+}
+.servis h4,
+.title{
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0 0 10px 0;
+}
+
+
+.under_while {
+  border-bottom: 2px solid white;
+}
+.under_black{
+  border-bottom: 2px solid black;
+}
+.servisen {
+  display: flex;
+  justify-content: space-around;
+}
+.serius {
+  width: 40%;
+  height: 21%;
+  margin: 1% 4%;
+}
+.serius .description {
+  font-size: 12px;
+}
+.serius i {
+  width: 40px;
+  height: 60px;
+  padding: 35px 0;
+}
+.portfolio{
+   padding: 5px 18%;
+}
+.portfolio .head{
+  margin: 75px 0;
+}
+.portfolio .head .radio{
+  float: right;
+}
+
+.portfolio .head input[type=radio]{
+  opacity: 0;
+}
+.portfolio .head label{
+  font-size: 12px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  padding: 0.6pc 0.9pc;
+
+}
+.portfolio .head input[type=radio]:checked + label,.portfolio .head input[type=radio]:hover + label{
+  border: 2px solid #4bcaff;
+  color:#4bcaff;
+}
+.portfolio .photos{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /*выстраивает колонки с отступами 1fr 1fr 1fr чтобы так не писать используется функция repeat(количество втавок, что выставить)*/
+  grid-template-rows: repeat(2, 2fr); /*выстраивает записи с отступами 1fr 1fr*/
+  grid-column-gap: 0px;/*отступы в самих грид элементов */
+  grid-row-gap: 10px 12px; /*отступы вокруг грид элементов*/
+}
+.portfolio .photos .photo{
+  width: 95%;
+  height: 90%;
+  overflow: hidden;
+  margin: 10px;
+  background-image: url(../img/portfolio_photo_hover.png);
+  background-position: 50% 0;
+}
+
+.portfolio .photos .photo img:hover{
+  opacity: 0.3;
+}
+.just{
+  display: flex;
+  background-color: #515f67;
+  padding: 4% 18%;
+}
+.just .descrip{
+  width: 40%;
+}
+.just .descrip p{
+  margin: 2% 0;
+  color: #fff;
+  font-size: 14px;
+}
+.just .descrip .button{
+  width: 140px;
+  height: 50px;
+  border: 3px solid #000;
+  text-align: center;
+  padding: 3% 0;
+  margin-top: 5%;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.just .descrip .button:hover{
+  border: 3px solid #515f67;
+  color: #fff;
+}
+.just video{
+  padding: 2%;
+  width: 95%;
+  float: right;
+}
+.twitter{
+  background: #4bcaff;
+  color: #fff;
+  padding: 30px 18%;
+}
+ .titles{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 3% 0;
+}
+.twitter p{
+  font-size: 15px;
+  line-height: 2;
+}
+.twitter p a{
+  color: #fff;
+  font-weight: bold;
+}
+.who_is_john{
+  background: url(../img/bg-photo.png) 10% 0;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 30px 18%;
+}
+.who_is_john .contat{
+  display: flex;
+}
+.who_is_john .contat .row{
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+.who_is_john .contat .row p{
+  margin: 5% 0;
+}
+.who_is_john .contat .row i{
+  border: 1px solid #fff;
+}
+.who_is_john .contat .row .cont{
+  margin: 5%;
+}
+.testim{
+  padding: 30px 18%;
+  color:#515f67;
+}
+.testim p{
+  line-height: 2;
+  font-size: 17px;
+}
+.testim .quot{
+  color:#4bcaff;
+}
+.form-cont{
+  background: url('../img/form-bg.png');
+  background-position: 50% 50%;
+  padding: 30px 18%;
+  color: #fff;
+
+}
+.form-cont .main-cont{
+  margin: 2% 0;
+}
+.form-cont .inp{
+  text-transform: uppercase;
+  max-width: 40%;
+}
+.form-cont .inp input[type=text] {
+  width: 25pc;
+  height: 2pc;
+  
+}
+.form-cont .name,.form-cont .email{
+  display: flex;
+  justify-content: space-between;
+}
+.form-cont .messag{
+  text-transform: uppercase;
+}
+.form-cont .opis{
+  width: 50%;
+  text-align: left;
+  margin: 3% 0;
+}
+.form-cont input, .form-cont textarea{
+  border: 1px solid #fff;
+  background: rgba( 0,0,0,0);
+  margin: 15px 0;
+  color: #fff;
+  font-size: 15px;
+}
+.form-cont textarea{
+  width: 100%;
+  height: 20vh;
+  resize: none;
+}
+.form-cont input[type=submit]{
+  width: 30%;
+  height: 5vh;
+  background: #4bcaff;
+  border: 1px solid #4bcaff;
+}
+.fot{
+  padding: 30px 18%;
+  display: flex;
+  justify-content: space-between;
+  background: #353f47;
+  color: #515f67;
+}
+.fot ul{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.fot li{
+  display: inline-block;
+  border-right: 0.5px solid #515f67;
+  padding: 0 6%;
+
+  
+}
+.fot li a{
+  color: #515f67;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.fot li:last-child{
+  border-right: none;
+}
+
+@media screen and (max-width: 850px){
+  .nav-bar{
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+  .menu li{
+    display: block;
+    padding-top: 3%;
+
+  }
+  .header{
+      padding: 50% 0 10% 0;
+      font-size: 20px
+  }
+  .servisen{
+    flex-direction: column; 
+  }
+  .serius{
+    width: 100%
+  }
+  .serius h4, .title{
+    font-size: 15px
+  }
+  .serius .description {
+  font-size: 12px;
+}
+  .portfolio .head{
+  }
+  .portfolio .radio{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio .photos{
+  grid-template-columns: repeat(2, 2fr); 
+  grid-template-rows: repeat(4, 2fr); 
+  }
+  .portfolio .head label{
+    font-size: 10px
+  }
+  .form-cont .name,.form-cont .email{
+    flex-direction: column;
+  }
+  .just p, .twitter p, .who_is_john p, .testim p, .form-cont p{
+    font-size: 13px;
+  }
+}
