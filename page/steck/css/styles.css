@@ -20,7 +20,7 @@
   color: #4bcaff;
 }
 .menu {
-  font-size: 14px;
+  font-size: 17px;
   opacity: 1;
   margin: auto 0;
 }
@@ -36,6 +36,14 @@
 .menu li a:hover {
   color: #4bcaff;
   border: 1px solid #4bcaff;
+}
+.menu .menu-item{
+  display: none;
+}
+.menu .menu-item span{
+  display: flex;
+  flex-direction: column;
+  margin-top: -70%;
 }
 .header {
   width: 100%;
@@ -76,7 +84,7 @@
 .servis h4,
 .title{
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 25px;
   padding: 0 0 10px 0;
 }
 
@@ -97,7 +105,7 @@
   margin: 1% 4%;
 }
 .serius .description {
-  font-size: 12px;
+  font-size: 15px;
 }
 .serius i {
   width: 40px;
@@ -124,7 +132,7 @@
   padding: 0.6pc 0.9pc;
 
 }
-.portfolio .head input[type=radio]:checked + label,.portfolio .head input[type=radio]:hover + label{
+.portfolio .head input[type=radio]:checked + label{
   border: 2px solid #4bcaff;
   color:#4bcaff;
 }
@@ -136,14 +144,17 @@
   grid-row-gap: 10px 12px; /*отступы вокруг грид элементов*/
 }
 .portfolio .photos .photo{
-  width: 95%;
+  width: 90%;
   height: 90%;
   overflow: hidden;
   margin: 10px;
   background-image: url(../img/portfolio_photo_hover.png);
-  background-position: 50% 0;
+  background-position: 50% 50%;
 }
-
+.portfolio .photos .photo img{
+  width: 100%;
+  height: 100%;
+}
 .portfolio .photos .photo img:hover{
   opacity: 0.3;
 }
@@ -158,21 +169,21 @@
 .just .descrip p{
   margin: 2% 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
 }
 .just .descrip .button{
   width: 140px;
   height: 50px;
   border: 3px solid #000;
-  text-align: center;
-  padding: 3% 0;
   margin-top: 5%;
+  background-color: #515f67;
   font-size: 20px;
   text-transform: uppercase;
 }
 .just .descrip .button:hover{
-  border: 3px solid #515f67;
+  border: 3px solid #fff;
   color: #fff;
+  background: #4bcaff;
 }
 .just video{
   padding: 2%;
@@ -190,7 +201,7 @@
   padding: 0 0 3% 0;
 }
 .twitter p{
-  font-size: 15px;
+  font-size: 20px;
   line-height: 2;
 }
 .twitter p a{
@@ -213,6 +224,7 @@
 }
 .who_is_john .contat .row p{
   margin: 5% 0;
+  font-size: 20px;
 }
 .who_is_john .contat .row i{
   border: 1px solid #fff;
@@ -226,7 +238,7 @@
 }
 .testim p{
   line-height: 2;
-  font-size: 17px;
+  font-size: 20px;
 }
 .testim .quot{
   color:#4bcaff;
@@ -243,10 +255,10 @@
 }
 .form-cont .inp{
   text-transform: uppercase;
-  max-width: 40%;
+  width: 50%;
 }
 .form-cont .inp input[type=text] {
-  width: 25pc;
+  width: 100%;
   height: 2pc;
   
 }
@@ -258,9 +270,10 @@
   text-transform: uppercase;
 }
 .form-cont .opis{
-  width: 50%;
+  width: 45%;
   text-align: left;
   margin: 3% 0;
+  font-size: 20px;
 }
 .form-cont input, .form-cont textarea{
   border: 1px solid #fff;
@@ -308,21 +321,34 @@
 .fot li:last-child{
   border-right: none;
 }
-
-@media screen and (max-width: 850px){
-  .nav-bar{
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 2%;
-  }
-  .menu li{
+@media screen and (max-width: 1130px){
+    .menu li{
     display: block;
     padding-top: 3%;
-
+    margin: 5% 0;
+    display: none;
   }
+  .menu .menu-item{
+    display: block
+  }
+  .form-cont .name,.form-cont .email{
+    flex-direction: column;
+  }
+  .form-cont .inp{
+    width: 100%
+  }
+  .form-cont .opis{
+    width: 100%
+  }
+}
+@media screen and (max-width: 825px){
+  .nav-bar{
+    padding-bottom: 2%;
+  }
+
   .header{
-      padding: 50% 0 10% 0;
-      font-size: 20px
+      padding: 25% 0 10% 0;
+      font-size: 30px
   }
   .servisen{
     flex-direction: column; 
@@ -349,10 +375,23 @@
   .portfolio .head label{
     font-size: 10px
   }
-  .form-cont .name,.form-cont .email{
+  .just{
     flex-direction: column;
+
+  }
+  .just .descrip{
+    width: 100%
+  }
+  .who_is_john .contat .row p{
+    font-size: 15px
+  }
+  .form-cont .opis{
+    width: 90%
+  }
+  .who_is_john .contat{
+    display: block;
   }
   .just p, .twitter p, .who_is_john p, .testim p, .form-cont p{
-    font-size: 13px;
+    font-size: 14px;
   }
 }
