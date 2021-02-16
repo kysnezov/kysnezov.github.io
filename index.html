@@ -1,43 +1,34 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-  <head>
-    <!-- Заголовок страницы в браузере -->
+
+<head>
     <title>Сайт портфолио</title>
-    <!--Получение данных о размере экрана-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Подключаем CSS -->
     <link rel="stylesheet" href="css/null-style.css">
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Кодировка страницы -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-  </head>
-  <!-- Отображаемое тело страницы -->
-  <body>
-      <header>
-        <div class="about">
-          <h1>Сайт-портфолио <br> Кузнецова Александра</h1>
-          <h3>Навыки:</h3>
-          <p>Верстаю сайты где-то около года. Имею навыки блочной верстки и адаптивной верстки. 
-            Имею опыт работы с предпроцессором SCSS и SASS. У меня есть навыки работы с JS на базовом уровне</p>
+</head>
+
+<body>
+    <main class="portfolio">
+        <div class="pade one">
+            <img src="img/pade-1.JPG" alt="">
+            <div class="about">
+                <a href="page/mylti/index.html" target="_blank">Сайт № 1</a>
+                <p>Этот сайт я делал на чистом HTML и CSS и немного JS</p>
+            </div>
+
         </div>
-        <div class="photo">
-          <img src="img/IMG_20200725_192622.jpg" alt="">
+        <div class="pade two">
+            <img src="img/pade-2.JPG" alt="">
+            <div class="about">
+                <a href="page/steck/index.html" target="_blank">Сайт № 2</a>
+                <p>Этот сайт я делал на чистом HTML и CSS</p>
+            </div>
+
         </div>
-      </header>
-      <main class="portfolio">
-          <a href="page/mylti/index.html">Сайт № 1</a>
-          <p>Этот сайт я делал на чистом HTML и CSS и немного JS</p>
-          <a href="page/steck/index.html">Сайт № 2</a>
-          <p>Этот сайт я делал на чистом HTML и CSS</p>
-       </main>
-      <footer>
-          <div class="contact">
-            <p class="email">email: kyznezov.aleksandr.1998@gmail.com</p>
-            <p class="call">Телефон: +7 (996) 398 68 58</p>
-          </div>
-      </footer>
-  </body>
+
+    </main>
+</body>
+
 </html>
